@@ -26,6 +26,15 @@ module.exports = {
         args[0].chunksSortMode = 'none';
         return args;
       });
+    // config.module.rules.push({
+    //   enforce: 'pre',
+    //   test: /\.(js|vue|ts)$/,
+    //   loader: 'eslint-loader',
+    //   exclude: /(node_modules)/,
+    //   options: {
+    //     fix: true,
+    //   },
+    // });
   },
   // css: {
   //   loaderOptions: {

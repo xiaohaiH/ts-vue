@@ -48,9 +48,23 @@ module.exports = {
       2,
       {
         vars: 'all',
-        args: 'after-used'
+        args: 'after-used',
+      },
+    ],
+    // 配置导入时路径是否重复导入之类 -> 需配合 eslint-plugin-import
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": true
+      },
+      "import/resolver": {
+        "node": {
+          "moduleDirectory": [
+            "node_modules",
+            "src/"
+          ]
+        }
       }
-    ]
+    }
   },
   parserOptions: {
     parser: 'typescript-eslint-parser',

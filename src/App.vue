@@ -3,14 +3,20 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <A />
+      <B />
     </div>
     <router-view/>
   </div>
 </template>
 
 <script lang="ts">
-
-  export default {};
+import A from '@/components/HelloWorld.vue';
+export default {
+  components: {
+    A,
+  },
+};
 </script>
 
 <style lang="scss">

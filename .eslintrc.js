@@ -43,8 +43,25 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     // 对象中的属性打点调用时, 点必须在下一行
     'dot-location': [ 'error', 'property' ],
-    // 缩进间距(还得细微配置下)
-    'indent': [ 'error', 2 ],
+    "vue": {
+      "script-indent": [
+        "error",
+        "tab",
+        {
+          "baseIndent": 1
+        }
+      ]
+    },
+    // 缩进间距
+    'indent': [
+      'error',
+      2,
+      {
+        'SwitchCase': 1,
+        'ArrayExpression': 1,
+        'ObjectExpression': 1
+      },
+    ],
     // 禁止多余的缩进(if 判断内的前后空格一致)
     'no-multi-spaces': 'error',
     // forin 中必须排除遍历原型
